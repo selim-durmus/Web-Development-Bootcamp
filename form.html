@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form Demo</h1>
+
+    <form action="/sign_in">
+      <p>
+        <label for="username">Enter a Username</label>
+      </p>
+      <p>
+        <input
+          type="text"
+          placeholder="username"
+          id="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="pass">Enter Password</label>
+      </p>
+      <p>
+        <input type="password" placeholder="password" id="pass" name="passw" />
+      </p>
+      <p>
+        <label for="color">Select a color</label>
+      </p>
+      <p>
+        <input type="color" id="color" name="col" />
+      </p>
+      <p>
+        <label for="number">Enter a Number</label>
+      </p>
+      <p>
+        <input
+          type="number"
+          placeholder="enter a number"
+          id="number"
+          name="num"
+          min="1"
+          max="1000000000"
+        />
+      </p>
+      <p>
+        <label for="time">Select a Date & Time</label>
+      </p>
+      <p>
+        <input type="time" id="time" name="time" />
+      </p>
+      <p>
+        <label for="range">Select a Range</label>
+        <input type="range" id="range" name="range" />
+      </p>
+
+      <button>Submit (Button Button)</button>
+      <input type="button" value="Input Button" />
+    </form>
+
+    <br />
+
+    <h2>Hijacking Searches</h2>
+
+    <h3>Reddit</h3>
+
+    <form action="https://reddit.com/search/">
+      <input type="text" name="q" />
+      <button>Search in Reddit</button>
+    </form>
+
+    <br />
+
+    <h3>Google</h3>
+
+    <form action="https://google.com/search">
+      <input type="text" name="q" />
+      <button>Searh in Google</button>
+    </form>
+
+    <br />
+    <h3>Youtube</h3>
+    <form action="https://youtube.com/results">
+      <input type="text" name="search_query" />
+
+      <button>Searh in Youtube</button>
+    </form>
+
+    <br />
+
+    <h2>More Inputs</h2>
+
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="check" checked />
+      <label for="check">I agree to everything!</label>
+
+      <p>
+        <label for="S">S:</label>
+        <input type="radio" name="size" id="S" value="S" />
+        <label for="M">M:</label>
+        <input type="radio" name="size" id="M" value="M" />
+        <label for="L">L:</label>
+        <input type="radio" name="size" id="L" value="L" />
+      </p>
+      <button>Submit</button>
+    </form>
+
+    <br />
+    <form action="/pets/">
+      <label for="pet">Please select a pet</label>
+      <select name="pet" id="pet">
+        <option value="hamster">Hamster</option>
+        <option value="horse">Horse</option>
+        <option value="eagle" selected>Eagle</option>
+        <option value="shark">Shark</option>
+      </select>
+      <p>
+        <label for="size">Size of your Pet</label>
+        <br />
+        <input
+          type="range"
+          name="size"
+          id="size"
+          min="1"
+          max="10"
+          step="1"
+          value="5"
+        />
+        <label for="size">Size</label>
+      </p>
+
+      <p>
+        <label for="message">Your Custom Message</label>
+        <br />
+        <textarea
+          name="custom_message"
+          id="message"
+          cols="50"
+          rows="5"
+          placeholder="Type your message here"
+        ></textarea>
+      </p>
+      <button>Submit your pet</button>
+    </form>
+
+    <br />
+  </body>
+</html>
