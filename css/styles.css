@@ -87,28 +87,37 @@ a {
   text-decoration: none;
 }
 
-/* span {
+span {
   color: #f5cac3;
   background-color: #84a59d;
-} */
+}
 
 footer a {
   text-decoration: underline purple;
 }
 
-/* span.tag2 {
+span.tag2 {
   color: yellow;
-} */
+}
 
-/* a[href*="https"] {
+a[href*="https"] {
   color: aqua;
-} */
+}
 
 a[href$=".com"] {
   color: yellow;
 }
 
-.spamm::after {
-  font-family: "Courier New", Courier, monospace;
-  color: yellow;
+/* SPECIFICITY DEMO */
+
+/* footer button {
+  background-color: yellow;
 }
+
+button {
+  background-color: green;
+}
+
+button:hover {
+  background-color: blue;
+} */

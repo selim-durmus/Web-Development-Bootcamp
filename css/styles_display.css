@@ -1,0 +1,62 @@
+span {
+  background-color: blueviolet;
+  border: 1px solid black;
+  width: 500px;
+  padding: 100px;
+  margin: 50px;
+}
+
+h1 {
+  background-color: blueviolet;
+  border: 1px solid black;
+  width: 500px;
+  padding: 10px;
+  margin: 50px;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+section {
+  background-color: aqua;
+  width: 800px;
+  height: 800px;
+}
+
+#asd {
+  background-color: brown;
+  width: 50%;
+  height: 50%;
+  font-size: 80px;
+  line-height: 50%;
+}
+
+h2 {
+  font-size: 2em;
+  margin-left: 2em;
+}
+
+article {
+  font-size: 30px;
+}
+
+button {
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: rgb(50, 134, 104);
+  color: black;
+}
+
+ul {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 10px;
+}
