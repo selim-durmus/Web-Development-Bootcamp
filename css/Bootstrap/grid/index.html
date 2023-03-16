@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Grid</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-1 text-center text-primary">The Grid System</h1>
+      <div class="row">
+        <div class="col-2 bg-success">I AM 2 UNITS</div>
+        <div class="col-8 bg-danger">I AM 8 UNITS</div>
+        <div class="col-2 bg-success">I AM 2 UNITS</div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 bg-success">I AM 3 UNITS</div>
+        <div class="col-6 bg-danger">I AM 6 UNITS</div>
+        <div class="col-3 bg-success">I AM 3 UNITS</div>
+      </div>
+
+      <div class="row">
+        <div class="col bg-success">AUTO SIZED</div>
+        <div class="col bg-danger">AUTO SIZED</div>
+        <div class="col bg-success">AUTO SIZED</div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col bg-info">AUTO SIZED</div>
+          <div class="col bg-primary">AUTO SIZED</div>
+          <div class="col-6 bg-danger">I AM A 6</div>
+        </div>
+      </div>
+
+      <h2 class="display-4">Responsive Grid</h2>
+      <div class="row">
+        <div class="col-md-6 col-xl-3 bg-info">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil?
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil?
+        </div>
+        <div class="col-md-6 col-xl-3 bg-info">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil?
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil?
+        </div>
+      </div>
+      <h2 class="display-5">Grid Alignment</h2>
+      <div class="row align-items-baseline">
+        <div class="col-md-6 col-xl-3 bg-info">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil?
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+          eius rem laborum voluptatem repellat fuga labore culpa vero quia,
+          doloremque eligendi voluptatum saepe placeat. Asperiores, illo itaque?
+          Voluptates, ratione assumenda. Illum quibusdam nesciunt facilis libero
+          deserunt iusto ducimus mollitia iure. Vero odit quibusdam, voluptatum
+          sunt voluptate, reiciendis sit sapiente at eaque repellendus pariatur
+          voluptatibus expedita, ipsum magni dolore illo eveniet.
+        </div>
+        <div class="col-md-6 col-xl-3 bg-info">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Facilis quaerat totam labore, vero culpa placeat architecto maxime a
+          cumque ex tenetur, excepturi neque, error earum? Labore voluptatibus
+          nesciunt repudiandae iusto?
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success align-self-end">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum porro
+          perferendis id quod blanditiis iusto quisquam cumque, harum deserunt
+          quaerat, minus saepe totam illum maxime explicabo omnis sint labore
+          nihil?
+        </div>
+      </div>
+
+      <h3>Justify Content</h3>
+      <div
+        class="row border justify-content-center justify-content-lg-start justify-content-xl-between"
+      >
+        <div class="col-md-4 bg-primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          voluptatibus sint consectetur? Recusandae quae itaque tempore quia
+          alias nihil beatae ducimus? Dignissimos earum autem magnam corrupti,
+          perspiciatis perferendis aliquid quaerat?
+        </div>
+        <div class="col-md-4 bg-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          voluptatibus sint consectetur? Recusandae quae itaque tempore quia
+          alias nihil beatae ducimus? Dignissimos earum autem magnam corrupti,
+          perspiciatis perferendis aliquid quaerat?
+        </div>
+      </div>
+      <div class="row g-1">
+        <img
+          class="col-md-4 img-fluid"
+          src="https://images.unsplash.com/photo-1678711267936-8bff94097e09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+          alt="resim"
+        />
+        <img
+          class="col-md-4 img-fluid"
+          src="https://images.unsplash.com/photo-1678712507648-a2ade74f1004?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80"
+          alt="resim2"
+        />
+
+        <img
+          class="col-md-4 img-fluid"
+          src="https://images.unsplash.com/photo-1678649494696-63127b98d4bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+          alt="resim3"
+        />
+      </div>
+    </div>
+  </body>
+</html>
