@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1 class="display-2">Forms</h1>
+
+    <form action="#nowhere">
+      <div class="row g-3">
+        <div class="mb-3 col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="group mb-3 col-md-6">
+          <label for="pass" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            placeholder="type your password here"
+          />
+        </div>
+      </div>
+
+      <div class="form-group mb-3 col-12">
+        <label for="state" class="form-label">State</label>
+        <select name="state" id="state" class="form-control">
+          <option value="AL">Alabama</option>
+          <option value="CA">California</option>
+        </select>
+      </div>
+
+      <div class="form-check mb-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="signed"
+          id="signme"
+        />
+        <label class="form-check-label" for="signme"> Sign Me Up </label>
+      </div>
+      <button type="button" class="btn btn-primary">Register</button>
+      <!-- <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox" />
+          <label for="checkbox" class="form-check-label">Check this</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check2" />
+          <label for="check2" class="form-check-label">Check this 2</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox3" />
+          <label class="form-check-label" for="checkbox3">custom check</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="switch1" />
+          <label class="form-check-label" for="switch1">Swipe 1</label>
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="switch2"
+            checked
+          />
+          <label class="form-check-label" for="switch2">Swipe 2</label>
+        </div>
+
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options"
+              id="black"
+              value="black"
+            />
+            <label class="form-check-label" for="black">black</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options"
+              id="red"
+              value="red"
+            />
+            <label class="form-check-label" for="red">red</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options"
+              id="disabled"
+              value="disabled"
+              disabled
+            />
+            <label class="form-check-label" for="disabled">disabled</label>
+          </div>
+        </div>
+      </div> -->
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
