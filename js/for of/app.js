@@ -34,3 +34,23 @@ for (let row of seatingChart) {
 for (let char of "hello world") {
   console.log(char);
 }
+
+const scores = {
+  selim: 100,
+  fatih: 90,
+  mehmet: 10,
+  elif: 20,
+  kerim: 30,
+};
+
+for (let people in scores) {
+  console.log(`${people} scored ${scores[people]}`);
+}
+
+let total = 0;
+let points = Object.values(scores);
+for (let score of points) {
+  total += score;
+}
+
+console.log(total / points.length);
