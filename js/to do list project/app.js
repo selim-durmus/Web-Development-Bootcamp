@@ -19,10 +19,13 @@ while (true) {
   }
   if (whatToDo === "delete") {
     let deleteToDo = parseInt(prompt("Enter the index of To Do to be deleted"));
-    console.log(`${list[deleteToDo]} has been removed from the list`);
-    list.splice(deleteToDo, 1);
+    if (deleteToDo > list.length - 1) {
+      console.log("there is no such index");
+    } else if (!Number.isNaN(deleteToDo)) {
+      console.log(`${list[deleteToDo]} has been removed from the list`);
+      list.splice(deleteToDo, 1);
+    } else {
+      console.log("invalid entry");
+    }
   }
 }
-
-// for (let each of list) {
-//       console.log(each)
