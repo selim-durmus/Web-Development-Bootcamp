@@ -18,7 +18,9 @@ while (true) {
     console.log("********");
   }
   if (whatToDo === "delete") {
-    let deleteToDo = prompt("Enter the index of To Do to be deleted");
+    let deleteToDo = parseInt(prompt("Enter the index of To Do to be deleted"));
+    console.log(`${list[deleteToDo]} has been removed from the list`);
+    list.splice(deleteToDo, 1);
   }
 }
 
