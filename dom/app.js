@@ -25,3 +25,11 @@ function selectLinks() {
     console.log(link.href);
   }
 }
+
+function changeColor() {
+  for (let link of links) {
+    link.style.color = "magenta";
+    link.style.textDecorationColor = "blue";
+    link.style.textDecorationStyle = "wavy";
+  }
+}
