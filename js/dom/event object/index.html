@@ -3,13 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buttons Color</title>
+    <title>Event Basics</title>
     <link rel="stylesheet" href="app.css" />
   </head>
 
   <body>
     <button>Click Me!</button>
-    <input type="text" />
+
+    <form action="/shelter" id="shelter">
+      <input type="text" id="catName" />
+      <button>Submit</button>
+    </form>
+
+    <h2>Available Cats</h2>
+
+    <ul id="cats"></ul>
+
+    <h2>Tweet</h2>
+
+    <form action="/tweet" id="tweet">
+      <input
+        type="text"
+        name="username"
+        placeholder="username"
+        id="nameinput"
+      />
+      <input type="text" name="tweet" placeholder="tweet" id="tweetinput" />
+      <button>Post Tweet</button>
+    </form>
+
+    <h2>Tweets</h2>
+
+    <ul id="tweets"></ul>
+
     <script src="app.js"></script>
   </body>
 </html>
