@@ -43,13 +43,21 @@ form.addEventListener("submit", function (e) {
 });
 
 const tweetForm = document.querySelector("#tweet");
-const tweetInput = document.querySelector("#tweetinput");
-const nameInput = document.querySelector("#nameinput");
 const tweets = document.querySelector("#tweets");
 tweetForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  const tweetContent = tweetInput.value;
-  const newLi = document.createElement("li");
-  newLi.innerText = tweetContent;
-  tweets.append(newLi);
+  const nameInput = tweetForm.elements.username;
+  const tweetInput = tweetForm.elements.tweet;
+  addTweet(nameInput.value, tweetInput.value);
+  nameInput.value = "";
+  tweetInput.value = "";
 });
+
+const addTweet = (nameInput, tweetInput) => {
+  const newTweet = document.createElement("li");
+  const nameTag = document.createElement("b");
+  nameTag.append(nameInput);
+  newTweet.append(nameTag);
+  newTweet.append(` - ${tweetInput}`);
+  tweets.append(newTweet);
+};
