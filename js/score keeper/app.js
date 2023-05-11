@@ -29,6 +29,7 @@ playerOneBtn.addEventListener("click", function () {
     gameEnded = true;
     playerOneBtn.disabled = true;
     playerTwoBtn.disabled = true;
+    changeColor();
   }
 });
 
@@ -44,6 +45,7 @@ playerTwoBtn.addEventListener("click", function () {
     gameEnded = true;
     playerOneBtn.disabled = true;
     playerTwoBtn.disabled = true;
+    changeColor();
   }
 });
 
@@ -59,4 +61,16 @@ function resetGame() {
   gameEnded = false;
   playerOneBtn.disabled = false;
   playerTwoBtn.disabled = false;
+  playerOneScore.style.color = "";
+  playerTwoScore.style.color = "";
+}
+
+function changeColor() {
+  if (scr1 > scr2) {
+    playerOneScore.style.color = "rgb(92, 184, 92)";
+    playerTwoScore.style.color = "rgb(217, 83, 79)";
+  } else {
+    playerTwoScore.style.color = "rgb(92, 184, 92)";
+    playerOneScore.style.color = "rgb(217, 83, 79)";
+  }
 }
