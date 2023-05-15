@@ -54,11 +54,12 @@ reset.addEventListener("click", function () {
 });
 
 function resetGame() {
+  gameEnded = false;
   scr1 = 0;
   scr2 = 0;
   playerOneScore.textContent = 0;
   playerTwoScore.textContent = 0;
-  gameEnded = false;
+
   playerOneBtn.disabled = false;
   playerTwoBtn.disabled = false;
   playerOneScore.style.color = "";
