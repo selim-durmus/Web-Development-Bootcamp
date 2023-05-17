@@ -57,6 +57,50 @@ const fakeRequestPromise = (url) => {
   });
 };
 
+// fakeRequestPromise("yelp.com/api/coffee/page1")
+//   .then(() => {
+//     console.log("promise resolved for page1");
+//     console.log("it worked!");
+//     fakeRequestPromise("yelp.com/api/coffee/page2")
+//       .then(() => {
+//         console.log("promise resolved for page2");
+//         fakeRequestPromise("yelp.com/api/coffee/page3")
+//           .then(() => {
+//             console.log("promise resolved for page3");
+//           })
+//           .catch(() => {
+//             console.log("promise rejected for page3");
+//           });
+//       })
+//       .catch(() => {
+//         console.log("promise rejected for page2");
+//       });
+//   })
+//   .catch(() => {
+//     console.log("promise rejected for page1");
+//     console.log("error on page1");
+//   });
+
+fakeRequestPromise("yelp.com/api/coffee/page1")
+  .then((data) => {
+    console.log("promise resolved for page1");
+    console.log(data);
+    return fakeRequestPromise("yelp.com/api/coffee/page2");
+  })
+  .then((data) => {
+    console.log("promise resolved for page2");
+    console.log(data);
+    return fakeRequestPromise("yelp.com/api/coffee/page3");
+  })
+  .then((data) => {
+    console.log("promise resolved for page3");
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log("promise rejected! A request failed");
+    console.log(err);
+  });
+
 // fakeRequestCallback('books.com/page1',
 //     function (response) {
 //         console.log("IT WORKED!!!!")
