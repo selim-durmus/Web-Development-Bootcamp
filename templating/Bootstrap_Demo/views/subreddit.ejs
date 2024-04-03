@@ -1,0 +1,29 @@
+<%- include('partials/head') %>
+
+<body>
+  <%- include('partials/navbar') %>
+  <div class="container">
+    You are on the <%= name %> Subreddit!
+
+    <h2><%= description %></h2>
+
+    <p><%= subscribers %> total subscribers</p>
+
+    <p>These are the posts:</p>
+
+    <ul>
+      <% for (let post of posts){ %>
+      <li>Title: <%= post.title %></li>
+      <% if (post.hasOwnProperty("img")) { %>
+      <img src="<%= post.img %>" alt="Post Image" />
+      <% } %>
+      <br />
+      Author: <%= post.author %>
+      <br />
+      <br />
+      <% } %>
+    </ul>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
