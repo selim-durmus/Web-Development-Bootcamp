@@ -2,12 +2,14 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const { v4: uuid } = require("uuid");
+const methodOverride = require("method-override");
 
 //app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(methodOverride("_method"));
 
 const comments = [
   { username: "Todd", comment: "lol that's so funny", id: uuid() },
@@ -36,6 +38,12 @@ app.get("/comments/:id", (req, res) => {
   const { id } = req.params;
   const comment = comments.find((c) => c.id === id);
   res.render("comments/show", { comment });
+});
+
+app.get("/comments/:id/edit", (req, res) => {
+  const { id } = req.params;
+  const comment = comments.find((c) => c.id === id);
+  res.render("comments/edit", { comment });
 });
 
 app.post("/comments", (req, res) => {

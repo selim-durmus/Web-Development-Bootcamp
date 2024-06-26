@@ -11,5 +11,11 @@
     <h2><%= comment.comment %> - <%= comment.username %></h2>
 
     <a href="/comments">Back to Index</a>
+
+    <br />
+
+    <form action="/comments/<%= comment.id %>/edit" method="get">
+      <button>Edit Comment</button>
+    </form>
   </body>
 </html>
