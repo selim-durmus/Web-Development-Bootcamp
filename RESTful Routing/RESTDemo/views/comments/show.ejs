@@ -17,5 +17,11 @@
     <form action="/comments/<%= comment.id %>/edit" method="get">
       <button>Edit Comment</button>
     </form>
+
+    <br />
+
+    <form action="/comments/<%= comment.id %>/?_method=DELETE" method="post">
+      <button>Delete Comment</button>
+    </form>
   </body>
 </html>

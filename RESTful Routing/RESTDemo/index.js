@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride("_method"));
 
-const comments = [
+let comments = [
   { username: "Todd", comment: "lol that's so funny", id: uuid() },
   {
     username: "Skyler",
@@ -57,6 +57,12 @@ app.patch("/comments/:id", (req, res) => {
   const newCommentText = req.body.comment;
   const foundComment = comments.find((c) => c.id === id);
   foundComment.comment = newCommentText;
+  res.redirect("/comments");
+});
+
+app.delete("/comments/:id", (req, res) => {
+  const { id } = req.params;
+  comments = comments.filter((comment) => comment.id !== id);
   res.redirect("/comments");
 });
 
